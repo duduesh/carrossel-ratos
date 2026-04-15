@@ -240,34 +240,25 @@ conteudo/carrosseis/[tema]/
 
 Se o usuário quiser imagens mas não tiver nenhuma, oferecer gerar por IA. A opção mais simples:
 
-### Pollinations.ai (gratuito, sem cadastro)
+### Nano Banana 2 (recomendado, gratis)
 
-Gera imagens direto por URL, sem API key:
+Se a skill `nanobanana-ratos` estiver instalada em `~/.claude/skills/nanobanana-ratos/`, usar ela pra gerar imagens. Checar se o `.env` existe nessa pasta.
 
-```bash
-curl -L "https://image.pollinations.ai/prompt/modern%20office%20desk%20minimal%20clean?width=1080&height=720&nologo=true" -o imagens/foto-01.jpg
-```
+Se estiver instalada e configurada:
+1. Carregar a chave: `source ~/.claude/skills/nanobanana-ratos/.env`
+2. Gerar a imagem com o mesmo curl da skill nanobanana-ratos
+3. Salvar em `conteudo/carrosseis/[tema]/imagens/`
+4. Mostrar pro usuario aprovar antes de usar no slide
 
-- Gratuito, sem limite prático
-- Qualidade OK pra foto de apoio (não pra foto principal de produto)
-- Não precisa instalar nada
+Se NAO estiver instalada, sugerir:
 
-**Como usar no fluxo:**
-1. Perguntar ao usuário o que quer na imagem (ex: "mesa de trabalho com notebook", "pessoa usando celular")
-2. Gerar com Pollinations, salvar em `conteudo/carrosseis/[tema]/imagens/`
-3. Mostrar pro usuário aprovar antes de usar no slide
-4. Se a qualidade não servir, sugerir: "Se quiser uma imagem melhor, tu pode gerar no Canva, DALL-E ou Midjourney e jogar na pasta imagens/"
+> "Pra gerar imagens por IA, tu pode instalar a skill nanobanana-ratos. E gratis e leva 2 minutos. Quer que eu te ajude?"
 
-**Dica pro prompt:** ser específico e adicionar "no text, clean background, professional" pra resultados mais limpos.
+**Dica pro prompt:** ser especifico e adicionar "no text, clean background, professional" pra resultados mais limpos.
 
-### Outras opções (requer API key)
+### Alternativa sem skill
 
-Se o usuário já tiver chave de algum serviço:
-- **OpenAI DALL-E 3** (~R$0.20/imagem): qualidade excelente, precisa de `OPENAI_API_KEY` no `.env`
-- **Stability AI** (gratuito ~25/dia): qualidade boa, precisa de `STABILITY_API_KEY`
-- **Replicate Flux** (5 grátis/mês): melhor qualidade open source, precisa de `REPLICATE_API_TOKEN`
-
-Se nenhuma dessas tiver configurada e o Pollinations não servir, orientar o usuário a gerar a imagem em outra ferramenta (Canva, Midjourney, ChatGPT) e jogar na pasta `imagens/`.
+Se o usuario nao quiser instalar a skill, orientar a gerar a imagem em outra ferramenta (Canva, ChatGPT, Midjourney) e jogar na pasta `imagens/`.
 
 ---
 
