@@ -138,15 +138,21 @@ Texto branco no terço inferior. Noise overlay por cima do gradiente. `object-po
 **Opção 2: Print/screenshot em box** (prints de tela, interfaces, tweets)
 
 ```css
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* conteúdo alinhado embaixo, respiro em cima */
+}
 .print-box {
   width: 100%;
   max-height: 500px;
   object-fit: contain; /* NUNCA cover */
   border-radius: 16px;
   background: rgba(255,255,255,0.05);
+  margin-bottom: 48px;
 }
 ```
-Imagem no topo, texto embaixo. Contain preserva o print inteiro. Nunca esticar imagem pequena.
+Imagem e texto alinhados embaixo, respiro em cima. Contain preserva o print inteiro. Nunca esticar imagem pequena.
 
 Escolher automaticamente: foto/paisagem = opção 1, print/screenshot = opção 2. Na dúvida, perguntar.
 

@@ -91,16 +91,22 @@ Usar quando a imagem é uma foto bonita que funciona como fundo. CSS exato:
 Usar quando a imagem precisa ser vista inteira, sem cortar. CSS exato:
 
 ```css
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* conteúdo alinhado embaixo, respiro em cima */
+}
 .print-box {
   width: 100%;           /* largura total (dentro do padding do slide) */
   max-height: 500px;     /* limite de altura pra sobrar espaço pro texto */
   object-fit: contain;   /* NUNCA cover — contain preserva o print inteiro */
   border-radius: 16px;
   background: rgba(255,255,255,0.05); /* moldura sutil atrás */
+  margin-bottom: 48px;   /* espaço entre imagem e título */
 }
 ```
 
-- Imagem no topo do slide, texto embaixo
+- Imagem e texto alinhados embaixo do slide, respiro visual em cima
 - `object-fit: contain` obrigatório (nunca cover, pra não cortar o print)
 - Se a imagem é pequena, não esticar. Deixar no tamanho natural com a moldura de fundo
 - Se a imagem é muito larga e pouco alta (ex: print widescreen), usar `max-height: 400px` e deixar o contain ajustar
