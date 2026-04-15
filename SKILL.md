@@ -150,18 +150,34 @@ O usuário fornece:
 
    Se o usuário fornecer imagens, criar a pasta `conteudo/carrosseis/[tema]/imagens/` e confirmar que as imagens estão lá antes de seguir.
 
-6. **Antes de escrever, planejar a espinha dorsal do carrossel.** Definir em uma frase cada:
-   - **Ângulo do autor:** qual é a opinião ou tese do usuário sobre o assunto? Se o usuário disse algo como "quero falar que X está matando Y" ou "minha visão é que isso muda Z", esse ângulo é o fio condutor do carrossel inteiro. Nunca diluir ou generalizar a opinião do usuário
-   - **Tensão central:** qual é a fricção, contradição ou dado surpreendente que sustenta o carrossel?
-   - **Mecanismo:** por que isso acontece? Qual é a causa real?
-   - **Provas:** 2-3 evidências concretas (dados, exemplos, cases)
-   - **Virada:** o que muda pra quem tá lendo? Qual é a implicação prática?
+6. **Planejar a espinha dorsal do carrossel e mostrar pro usuário.** Montar e apresentar:
 
-   Não mostrar esse planejamento pro usuário. É interno, pra garantir que o carrossel tem substância antes de escrever. Mas o ângulo do autor deve permear todo o texto, do hook ao CTA.
+   > **Espinha dorsal do carrossel:**
+   >
+   > **Ângulo:** [a opinião/tese do usuário sobre o assunto. Se ele disse "quero falar que X tá matando Y", esse é o ângulo. Nunca diluir]
+   >
+   > **Tensão central:** [a fricção, contradição ou dado surpreendente]
+   >
+   > **Mecanismo:** [por que isso acontece, a causa real]
+   >
+   > **Provas:** [2-3 evidências concretas]
+   >
+   > **Virada:** [o que muda pra quem tá lendo]
+   >
+   > **3 opções de capa:**
+   > A: [título] / [subtítulo]
+   > B: [título] / [subtítulo]
+   > C: [título] / [subtítulo]
+   >
+   > Qual capa tu prefere? E a narrativa tá no caminho certo ou quer ajustar algo?
 
-7. Escrever os slides seguindo o arco narrativo:
+   **CHECKPOINT 1:** Esperar o usuário escolher a capa e aprovar a direção narrativa. Se ele quiser mudar o ângulo, ajustar a espinha dorsal antes de escrever. Só avançar quando a narrativa estiver alinhada.
 
-   **Slide 1 (Capa):** 3 opções de título (max 8 palavras cada) + subtítulo. Precisa criar tensão ou curiosidade. Nunca descritivo ("5 dicas de X"), sempre com ângulo ("por que X não funciona como tu pensa").
+   Cada opção de capa deve ter título (max 8 palavras) + subtítulo próprio. Nunca o mesmo subtítulo pra todas. Precisa criar tensão ou curiosidade. Nunca descritivo ("5 dicas de X"), sempre com ângulo ("por que X não funciona como tu pensa").
+
+7. **Escrever os slides com base na espinha dorsal e capa aprovadas.** Seguir o arco narrativo:
+
+   **Slide 1 (Capa):** usar a capa escolhida no checkpoint 1.
 
    **Slide 2 (Hook):** Abre com um fato, dado ou situação que cria tensão. Contextualiza o problema e faz a pessoa querer entender o porquê. O slide termina preparando o terreno pro próximo (a pessoa precisa passar pro próximo pra resolver a tensão, sem precisar de "swipe pra ver mais").
 
@@ -199,15 +215,17 @@ O usuário fornece:
 - Sem travessões (—) a menos que o preferencias.md diga o contrário
 - Se soar como template, redação de vestibular ou post genérico de Instagram: reescrever do zero
 
-7. Gerar legenda Instagram:
+8. Gerar legenda Instagram:
    - Gancho nos primeiros 125 caracteres (é o que aparece antes do "...mais")
    - 2-3 parágrafos curtos de desenvolvimento
    - CTA no final
    - 5-10 hashtags relevantes
 
-8. Salvar tudo em `conteudo/carrosseis/[tema]/carousel-text.md`
+9. Mostrar o texto completo de todos os slides + legenda no chat (não só salvar no arquivo)
 
-**CHECKPOINT:** Mostrar o texto completo + as 3 opções de capa + legenda sugerida. Esperar o usuário escolher a capa e aprovar o texto antes de seguir.
+10. Salvar tudo em `conteudo/carrosseis/[tema]/carousel-text.md`
+
+**CHECKPOINT 2:** Mostrar o texto completo + legenda. Esperar o usuário aprovar ou pedir ajustes antes de seguir pra Fase 2. Se pedir pra mudar um slide, ajustar só aquele.
 
 ---
 
