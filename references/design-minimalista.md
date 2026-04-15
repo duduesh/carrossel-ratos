@@ -16,17 +16,9 @@
 
 ## Ritmo visual
 
-Alternar fundos claros e escuros entre slides consecutivos pra criar contraste e evitar fadiga visual. Não fazer todos os slides com o mesmo fundo.
+Variar os layouts entre slides pra manter interesse visual. Não fazer todos os slides com o mesmo layout. Usar os diferentes layouts da seção abaixo pra criar ritmo.
 
-Exemplo de sequência:
-- Capa: fundo escuro (ou imagem com gradiente)
-- Slide 2: fundo claro
-- Slide 3: fundo escuro
-- Slide 4: fundo claro
-- ...
-- Slide final (CTA): fundo claro com branding
-
-Adaptar conforme o número de slides. O princípio é variar, não seguir uma fórmula rígida.
+O fundo pode ser consistente (todos claros ou todos escuros, conforme o design guide). O ritmo vem da variação de layout, não de trocar cor de fundo a cada slide.
 
 ---
 
@@ -59,21 +51,62 @@ Referenciar no HTML com caminho relativo: `<img src="imagens/foto-capa.jpg">`
 
 ### Capa — duas opções conforme o tipo de imagem
 
-**Opção 1: Imagem de fundo (fotos grandes, paisagens, ambientes, imagens impactantes)**
-Imagem full-bleed cobrindo o slide inteiro, com overlay escuro por cima (gradiente linear, opacity 0.6-0.85) pra garantir leitura do texto. Texto branco posicionado no terço inferior. Contraste mínimo 4.5:1. Usar quando a imagem é bonita o suficiente pra ser o fundo.
+**REGRA GERAL: nunca cortar ou redimensionar uma imagem de forma que perca informação. Se a imagem não cabe no layout escolhido, ajustar o layout, não a imagem.**
 
-**Opção 2: Imagem em box (prints de tela, screenshots, imagens focadas, logos)**
-Imagem dentro de um box retangular no topo do slide, acima do texto:
-- width: 100% (respeitando padding lateral)
-- height: ~360-420px
-- border-radius: 16-20px
-- object-fit: cover (ou contain pra prints/screenshots)
-- Fundo do slide: cor do design guide (claro ou escuro)
-- Texto embaixo da imagem, com espaçamento generoso
+**Opção 1: Imagem de fundo (fotos grandes, paisagens, ambientes)**
 
-Usar quando a imagem é um print, screenshot ou elemento visual que precisa ser visto inteiro, não como fundo.
+Usar quando a imagem é uma foto bonita que funciona como fundo. CSS exato:
 
-**Escolher automaticamente:** se a imagem parece foto/paisagem/ambiente, usar opção 1. Se parece print/screenshot/interface, usar opção 2. Na dúvida, perguntar ao usuário.
+```css
+.capa-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center; /* alinha à esquerda pra mostrar o conteúdo principal */
+}
+.capa-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(0,0,0,0.2) 0%,
+    rgba(0,0,0,0.5) 50%,
+    rgba(0,0,0,0.88) 100%
+  );
+}
+.capa-content {
+  position: relative;
+  z-index: 5;
+  /* texto no terço inferior, alinhado à esquerda */
+}
+```
+
+- Texto sempre branco, posicionado no terço inferior
+- `object-position: left center` por padrão (não `center center`, que corta os lados)
+- Se o conteúdo principal da foto tá no centro ou à direita, ajustar o object-position
+
+**Opção 2: Print/screenshot em box (prints de tela, interfaces, tweets, imagens focadas)**
+
+Usar quando a imagem precisa ser vista inteira, sem cortar. CSS exato:
+
+```css
+.print-box {
+  width: 100%;           /* largura total (dentro do padding do slide) */
+  max-height: 500px;     /* limite de altura pra sobrar espaço pro texto */
+  object-fit: contain;   /* NUNCA cover — contain preserva o print inteiro */
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05); /* moldura sutil atrás */
+}
+```
+
+- Imagem no topo do slide, texto embaixo
+- `object-fit: contain` obrigatório (nunca cover, pra não cortar o print)
+- Se a imagem é pequena, não esticar. Deixar no tamanho natural com a moldura de fundo
+- Se a imagem é muito larga e pouco alta (ex: print widescreen), usar `max-height: 400px` e deixar o contain ajustar
+- Se a imagem é muito alta e estreita, reduzir `max-height` e centralizar horizontalmente
+
+**Escolher automaticamente:** foto/paisagem/pessoa = opção 1. Print/screenshot/interface/tweet = opção 2. Na dúvida, perguntar ao usuário.
 
 ### Slide escuro com foto
 Imagem de fundo com overlay escuro (80-90% opacity).

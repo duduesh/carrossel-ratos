@@ -47,9 +47,9 @@ Não centralizar tudo. Usar o espaço de forma intencional:
 O carrossel é uma sequência narrativa, não uma coleção de slides iguais.
 
 - Variar entre slides densos e slides com muito respiro
-- Alternar fundos claros e escuros (ou variações da paleta)
 - Nunca 3 slides seguidos com o mesmo layout
 - O slide de CTA deve ser visualmente diferente de todos os outros
+- O fundo pode ser consistente (conforme design guide). O ritmo vem da variação de layout, composição e elementos, não de trocar cor de fundo a cada slide
 
 ---
 
@@ -117,10 +117,38 @@ Imagens em `conteudo/carrosseis/[tema]/imagens/`, referência relativa no HTML.
 
 ### Capa — duas opções conforme o tipo de imagem
 
-- **Imagem de fundo** (fotos grandes, paisagens, ambientes): full-bleed + gradiente escuro (0.6-0.85 opacity) + noise overlay. Texto no terço inferior. Contraste 4.5:1
-- **Imagem em box** (prints, screenshots, interfaces): box retangular no topo (100% width, ~360-420px, border-radius 12-20px, object-fit cover/contain). Texto embaixo. Se a imagem é um print, usar contain pra não cortar
+**REGRA GERAL: nunca cortar ou redimensionar uma imagem de forma que perca informação.**
 
-Escolher automaticamente: foto/paisagem = fundo, print/screenshot = box. Na dúvida, perguntar.
+**Opção 1: Imagem de fundo** (fotos grandes, paisagens, ambientes)
+
+```css
+.capa-bg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: left center; /* mostra o conteúdo principal */
+}
+.capa-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.88) 100%);
+}
+```
+Texto branco no terço inferior. Noise overlay por cima do gradiente. `object-position: left center` por padrão.
+
+**Opção 2: Print/screenshot em box** (prints de tela, interfaces, tweets)
+
+```css
+.print-box {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain; /* NUNCA cover */
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+}
+```
+Imagem no topo, texto embaixo. Contain preserva o print inteiro. Nunca esticar imagem pequena.
+
+Escolher automaticamente: foto/paisagem = opção 1, print/screenshot = opção 2. Na dúvida, perguntar.
 
 ### Demais slides
 - **Slide escuro com foto:** overlay 80-90%. Legibilidade primeiro
