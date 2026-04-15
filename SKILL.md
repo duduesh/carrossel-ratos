@@ -149,33 +149,53 @@ O usuário fornece:
 
    Se o usuário fornecer imagens, criar a pasta `conteudo/carrosseis/[tema]/imagens/` e confirmar que as imagens estão lá antes de seguir.
 
-6. Escrever os slides seguindo o fluxo:
+6. **Antes de escrever, planejar a espinha dorsal do carrossel.** Definir em uma frase cada:
+   - **Tensão central:** qual é a fricção, contradição ou dado surpreendente que sustenta o carrossel?
+   - **Mecanismo:** por que isso acontece? Qual é a causa real?
+   - **Provas:** 2-3 evidências concretas (dados, exemplos, cases)
+   - **Virada:** o que muda pra quem tá lendo? Qual é a implicação prática?
 
-   **Slide 1 (Capa):** 3 opções de título (max 8 palavras cada) + subtítulo. O usuário escolhe antes de continuar.
+   Não mostrar esse planejamento pro usuário. É interno, pra garantir que o carrossel tem substância antes de escrever.
 
-   **Slide 2 (Hook/Tensão):** Contextualizar o tema e criar curiosidade. Duas frases que fazem a pessoa querer passar pro próximo.
+7. Escrever os slides seguindo o arco narrativo:
 
-   **Slides 3-4 (Contexto):** O que é, por que importa, o que mudou. Dados concretos quando possível (número + fonte + ano, não "cada vez mais" ou "nos últimos tempos").
+   **Slide 1 (Capa):** 3 opções de título (max 8 palavras cada) + subtítulo. Precisa criar tensão ou curiosidade. Nunca descritivo ("5 dicas de X"), sempre com ângulo ("por que X não funciona como tu pensa").
 
-   **Slides 5-7 (Desenvolvimento):** Um insight por slide, opinião clara. Cada slide aprofunda um ponto diferente, não repete o anterior com palavras diferentes.
+   **Slide 2 (Hook):** Abre com um fato, dado ou situação que cria tensão. Contextualiza o problema e faz a pessoa querer entender o porquê. O slide termina preparando o terreno pro próximo (a pessoa precisa passar pro próximo pra resolver a tensão, sem precisar de "swipe pra ver mais").
 
-   **Slide 8-9 (Implicação):** O que isso muda pra quem tá lendo? Conexão prática, não genérica.
+   **Slides 3-4 (Mecanismo):** Explica POR QUE isso acontece. Não é só "o que", é o motor por trás. Dados concretos aqui: número + fonte + ano. Se não tiver dado, usar um exemplo real e específico (nome de empresa, produto, caso). Nunca genérico.
 
-   **Slide final (CTA):** Chamada pra ação + menção ao canal/marca. Curto.
+   **Slides 5-7 (Provas e aprofundamento):** Um ponto por slide, cada um aprofundando um aspecto diferente. Cada slide deve adicionar uma camada nova, não repetir o anterior com palavras diferentes. Se o slide 5 apresenta um dado, o slide 6 contradiz ou expande, o slide 7 conecta com a realidade do leitor.
 
-**Regras de escrita:**
-- Frases longas e naturais (2-4 frases por slide), não bullet points disfarçados
-- Cada frase deve funcionar lida em voz alta, como parágrafo de reportagem
-- Conectivos naturais: porque, só que, por isso, enquanto, mas, então. Evitar lista solta
-- Curiosity gap entre slides (cada slide termina com algo que puxa pro próximo)
-- Dentro de cada slide, o texto flui como um bloco coeso
+   **Slide 8-9 (Virada):** Aqui o carrossel muda de tom. Não é resumo do que foi dito. É uma virada genuína: "e o que isso significa pra quem tá lendo?" ou "o que muda a partir de agora?". Conexão prática e específica, não genérica.
+
+   **Slide final (CTA):** Chamada pra ação + menção ao canal/marca. Curto. O CTA precisa ter uma frase-ponte que conecta o conteúdo do carrossel com a ação (não um "segue pra mais" solto).
+
+**Regras de construção do texto:**
+- Cada slide é um parágrafo de reportagem, não uma lista disfarçada. 2-4 frases que fluem com conectivos naturais (porque, só que, por isso, enquanto, mas, então, aí)
+- Artigos sempre presentes: "um mercado", "a marca", "os dados". Nunca cortar artigo pra economizar espaço
+- Cada frase deve funcionar lida em voz alta. Se soar robótico, reescrever
+- Preferir 2 frases curtas com ponto a 1 frase longa com vírgula. Ritmo é mais importante que economia
+- Cada slide termina preparando o terreno pro próximo. A passagem entre slides deve ser inevitável pela tensão narrativa, não por aviso ("continue no próximo")
+- Dentro de cada slide, o texto é um bloco coeso. Entre slides, há curiosity gap
+- Toda afirmação factual precisa de especificidade: dado + fonte + ano. "O mercado cresceu 34% em 2024 (Statista)" em vez de "o mercado cresceu muito"
+- Se não tiver dado verificável, não inventar. Melhor uma opinião forte e honesta do que um número falso
+
+**Teste de qualidade (rodar mentalmente antes de entregar):**
+- **Teste da leitura em voz alta:** cada slide soa como alguém falando ou como texto gerado por IA?
+- **Teste da substituição:** se trocar o tema por outro qualquer e o texto ainda funcionar, tá genérico demais. Reescrever com especificidade
+- **Teste da promessa:** o que o hook prometeu foi entregue antes do CTA?
+- **Teste do "e daí?":** cada slide responde "e daí?" do anterior. Se um slide não avança a narrativa, cortar
+
+**Padrões proibidos:**
+- Sem estruturas binárias: "não é X, é Y" ou "X diminui, Y acelera" (parece IA)
+- Sem cacoetes: "e isso muda tudo", "no fim das contas", "a pergunta que fica", "de forma X", "cada vez mais", "em um mundo onde", "é preciso", "simplesmente", "basicamente"
+- Sem jargão corporativo: "ecossistema", "mindset", "sinergia", "potencializar", "alavancagem", "disruptivo"
+- Sem aberturas genéricas: "hoje vamos falar sobre", "neste carrossel tu vai", "muitas pessoas perguntam"
+- Sem fechamentos fracos: "continue no próximo", "swipe pra ver mais", "não para por aí"
+- Sem CTA cordial: "espero que tenha gostado", "se esse conteúdo te ajudou", "não esqueça de seguir"
 - Sem travessões (—) a menos que o preferencias.md diga o contrário
-- Sem estruturas binárias tipo "não é X, é Y" ou "X diminui, Y acelera" (parece IA)
-- Sem cacoetes: "e isso muda tudo", "no fim das contas", "a pergunta que fica", "de forma X", "cada vez mais"
-- Sem jargão corporativo: "ecossistema", "mindset", "sinergia", "potencializar"
-- Se soar como template ou texto gerado, reescrever
-- Dados concretos quando possível: "cresceu 34% em 2024 (Statista)" em vez de "cresceu muito nos últimos anos"
-- Se não tiver dado verificável, não inventar. Melhor uma opinião honesta do que um número falso
+- Se soar como template, redação de vestibular ou post genérico de Instagram: reescrever do zero
 
 7. Gerar legenda Instagram:
    - Gancho nos primeiros 125 caracteres (é o que aparece antes do "...mais")
