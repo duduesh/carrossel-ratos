@@ -115,7 +115,14 @@ Usar com intenção pra criar profundidade:
 
 Imagens em `conteudo/carrosseis/[tema]/imagens/`, referência relativa no HTML.
 
-- **Capa com foto:** full-bleed + gradiente escuro (0.7-0.9 opacity). Contraste 4.5:1
+### Capa — duas opções conforme o tipo de imagem
+
+- **Imagem de fundo** (fotos grandes, paisagens, ambientes): full-bleed + gradiente escuro (0.6-0.85 opacity) + noise overlay. Texto no terço inferior. Contraste 4.5:1
+- **Imagem em box** (prints, screenshots, interfaces): box retangular no topo (100% width, ~360-420px, border-radius 12-20px, object-fit cover/contain). Texto embaixo. Se a imagem é um print, usar contain pra não cortar
+
+Escolher automaticamente: foto/paisagem = fundo, print/screenshot = box. Na dúvida, perguntar.
+
+### Demais slides
 - **Slide escuro com foto:** overlay 80-90%. Legibilidade primeiro
 - **Slide claro com foto:** image box (100% width, ~360px, border-radius 12-20px)
 - **Todas as imagens fornecidas devem ser usadas**

@@ -57,9 +57,23 @@ Usar pelo menos 3 layouts diferentes entre os slides pra manter o interesse visu
 As imagens ficam na pasta `conteudo/carrosseis/[tema]/imagens/`.
 Referenciar no HTML com caminho relativo: `<img src="imagens/foto-capa.jpg">`
 
-### Capa com foto
-Imagem full-bleed com gradiente escuro por cima (opacity 0.7-0.9), texto branco.
-Garantir contraste mínimo 4.5:1 entre texto e fundo.
+### Capa — duas opções conforme o tipo de imagem
+
+**Opção 1: Imagem de fundo (fotos grandes, paisagens, ambientes, imagens impactantes)**
+Imagem full-bleed cobrindo o slide inteiro, com overlay escuro por cima (gradiente linear, opacity 0.6-0.85) pra garantir leitura do texto. Texto branco posicionado no terço inferior. Contraste mínimo 4.5:1. Usar quando a imagem é bonita o suficiente pra ser o fundo.
+
+**Opção 2: Imagem em box (prints de tela, screenshots, imagens focadas, logos)**
+Imagem dentro de um box retangular no topo do slide, acima do texto:
+- width: 100% (respeitando padding lateral)
+- height: ~360-420px
+- border-radius: 16-20px
+- object-fit: cover (ou contain pra prints/screenshots)
+- Fundo do slide: cor do design guide (claro ou escuro)
+- Texto embaixo da imagem, com espaçamento generoso
+
+Usar quando a imagem é um print, screenshot ou elemento visual que precisa ser visto inteiro, não como fundo.
+
+**Escolher automaticamente:** se a imagem parece foto/paisagem/ambiente, usar opção 1. Se parece print/screenshot/interface, usar opção 2. Na dúvida, perguntar ao usuário.
 
 ### Slide escuro com foto
 Imagem de fundo com overlay escuro (80-90% opacity).
@@ -67,9 +81,9 @@ Legibilidade sempre vem primeiro. Se a foto atrapalha a leitura, aumentar o over
 
 ### Slide claro com foto
 Imagem em box retangular no topo do slide:
-- width: 100%
+- width: 100% (respeitando padding lateral)
 - height: ~360px
-- border-radius: 20px
+- border-radius: 16-20px
 - object-fit: cover
 
 ### Regra geral
