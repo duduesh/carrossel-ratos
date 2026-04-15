@@ -164,10 +164,12 @@ O usuário fornece:
    >
    > **Virada:** [o que muda pra quem tá lendo]
    >
-   > **3 opções de capa:**
+   > **5 opções de capa:**
    > A: [título] / [subtítulo]
    > B: [título] / [subtítulo]
    > C: [título] / [subtítulo]
+   > D: [título] / [subtítulo]
+   > E: [título] / [subtítulo]
    >
    > Qual capa tu prefere? E a narrativa tá no caminho certo ou quer ajustar algo?
 
