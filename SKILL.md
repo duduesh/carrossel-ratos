@@ -150,12 +150,13 @@ O usuário fornece:
    Se o usuário fornecer imagens, criar a pasta `conteudo/carrosseis/[tema]/imagens/` e confirmar que as imagens estão lá antes de seguir.
 
 6. **Antes de escrever, planejar a espinha dorsal do carrossel.** Definir em uma frase cada:
+   - **Ângulo do autor:** qual é a opinião ou tese do usuário sobre o assunto? Se o usuário disse algo como "quero falar que X está matando Y" ou "minha visão é que isso muda Z", esse ângulo é o fio condutor do carrossel inteiro. Nunca diluir ou generalizar a opinião do usuário
    - **Tensão central:** qual é a fricção, contradição ou dado surpreendente que sustenta o carrossel?
    - **Mecanismo:** por que isso acontece? Qual é a causa real?
    - **Provas:** 2-3 evidências concretas (dados, exemplos, cases)
    - **Virada:** o que muda pra quem tá lendo? Qual é a implicação prática?
 
-   Não mostrar esse planejamento pro usuário. É interno, pra garantir que o carrossel tem substância antes de escrever.
+   Não mostrar esse planejamento pro usuário. É interno, pra garantir que o carrossel tem substância antes de escrever. Mas o ângulo do autor deve permear todo o texto, do hook ao CTA.
 
 7. Escrever os slides seguindo o arco narrativo:
 
