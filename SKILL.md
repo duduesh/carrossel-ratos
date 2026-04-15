@@ -128,7 +128,11 @@ O usuário fornece:
 
 1. Ler `_contexto/preferencias.md` pra calibrar tom
 2. Ler `_contexto/empresa.md` pra entender contexto e público
-3. Se o input for um link, usar WebFetch pra buscar o conteúdo
+3. Se o input for um link, buscar o conteúdo com os fallbacks corretos:
+   - **Links normais (artigos, blogs, docs):** tentar WebFetch direto. Se falhar ou retornar pouco conteúdo, usar Jina Reader: prefixar a URL com `https://r.jina.ai/` (ex: `https://r.jina.ai/https://exemplo.com/artigo`)
+   - **Links do X/Twitter (x.com ou twitter.com):** substituir o domínio por `api.fxtwitter.com` e usar WebFetch (ex: `https://x.com/user/status/123` vira `https://api.fxtwitter.com/user/status/123`). Funciona também pra `x.com/i/status/ID`. Retorna texto, mídia e links do tweet sem precisar de login
+   - **Links do Instagram:** WebFetch não funciona. Avisar o usuário pra copiar o texto do post e colar direto
+   - **Links de YouTube:** se tiver a skill `/yt-transcript` ou `/transcribe`, usar. Se não, tentar WebFetch na página
 4. Definir o ângulo do carrossel: educacional, oportunidade, contrário, provocativo ou inspiracional
 
 5. **Briefing rápido** — perguntar ao usuário (numa mensagem só):
