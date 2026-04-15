@@ -112,7 +112,10 @@ body {
 - Se a imagem é muito larga e pouco alta (ex: print widescreen), usar `max-height: 400px` e deixar o contain ajustar
 - Se a imagem é muito alta e estreita, reduzir `max-height` e centralizar horizontalmente
 
-**Escolher automaticamente:** foto/paisagem/pessoa = opção 1. Print/screenshot/interface/tweet = opção 2. Na dúvida, perguntar ao usuário.
+**Prioridade de escolha:**
+1. **Se o usuário especificou explicitamente** qual opção quer ("quero como fundo", "coloca em box", "imagem de fundo"), usar essa opção. Ponto final — não reclassificar.
+2. **Se o usuário não especificou**, escolher automaticamente: foto/paisagem/pessoa = opção 1. Print/screenshot/interface/tweet = opção 2.
+3. **Na dúvida**, perguntar ao usuário antes de gerar.
 
 ### Slide escuro com foto
 Imagem de fundo com overlay escuro (80-90% opacity).

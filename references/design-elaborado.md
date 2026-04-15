@@ -154,7 +154,10 @@ body {
 ```
 Imagem e texto alinhados embaixo, respiro em cima. Contain preserva o print inteiro. Nunca esticar imagem pequena.
 
-Escolher automaticamente: foto/paisagem = opção 1, print/screenshot = opção 2. Na dúvida, perguntar.
+**Prioridade de escolha:**
+1. **Se o usuário especificou explicitamente** qual opção quer ("quero como fundo", "coloca em box", "imagem de fundo"), usar essa opção. Ponto final — não reclassificar.
+2. **Se o usuário não especificou**, escolher automaticamente: foto/paisagem = opção 1, print/screenshot = opção 2.
+3. **Na dúvida**, perguntar ao usuário antes de gerar.
 
 ### Demais slides
 - **Slide escuro com foto:** overlay 80-90%. Legibilidade primeiro
